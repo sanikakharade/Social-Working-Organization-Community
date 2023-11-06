@@ -1,0 +1,92 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Services section styles */
+.services {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}

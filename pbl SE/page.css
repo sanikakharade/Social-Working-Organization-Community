@@ -1,0 +1,116 @@
+/* Reset default styles */
+html, body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set up default font and background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Banner styles */
+#banner {
+  background-color: #555;
+  color: #fff;
+  padding: 50px;
+}
+
+#banner h2 {
+  margin-bottom: 20px;
+}
+
+#banner .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* About section styles */
+#about {
+  padding: 50px;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+}
+
+/* Events section styles */
+#events {
+  background-color: #eee;
+  padding: 50px;
+}
+
+#events h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  #banner {
+    padding: 30px;
+  }
+
+  #banner h2 {
+    font-size: 24px;
+  }
+
+  #about, #events {
+    padding: 30px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}

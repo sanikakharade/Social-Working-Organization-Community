@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Social Working Organizations Network</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Social Working Organizations Network</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Organizations</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="banner">
+      <div class="container">
+        <h2>Connecting social working organizations for a better world</h2>
+        <a href="#" class="btn">Join Us</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          A website that represents social issues and organizations working on
+          these in a detailed manner. Includes issues such as deforestation,
+          pollution, improper waste management. People are aware of social
+          issues around them and are willing to help but are unaware of
+          organizations working on these issues. This website tackles this
+          problem by listing all the problems and organizations working for
+          these issues.
+        </p>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="container">
+        <h2>Upcoming Events</h2>
+        <div id="event-list"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2023 Social Working Organizations Network. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
